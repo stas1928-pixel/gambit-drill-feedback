@@ -1,0 +1,30 @@
+name: Repertoire correction
+description: Report a move or explanation that is wrong or missing
+body:
+  - type: input
+    id: opening
+    attributes:
+      label: Opening and line name
+      placeholder: Elephant Gambit — Declined, hold e4
+    validations:
+      required: true
+  - type: input
+    id: moves
+    attributes:
+      label: Moves up to the problem
+      placeholder: 1.e4 e5 2.Nf3 d5 3.exd5 e4
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should change, and why?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source URL (book, study, article, or game)
+      placeholder: https://lichess.org/study/…
+    validations:
+      required: true

@@ -1,0 +1,38 @@
+name: Bug report
+description: Report something broken or hard to use
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Device and browser
+      placeholder: Pixel 7, Chrome 130, installed PWA
+    validations:
+      required: true
+  - type: input
+    id: screen
+    attributes:
+      label: Screen or line
+      placeholder: Train — Scotch Gambit — The Modern Attack
+    validations:
+      required: true
+  - type: input
+    id: viewport
+    attributes:
+      label: Viewport size (if known)
+      placeholder: 390 × 844
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and what happened
+      description: Do not include API tokens, private game archives, or other people's usernames.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot (optional)
+      description: Crop it to the relevant app area and remove personal information.
